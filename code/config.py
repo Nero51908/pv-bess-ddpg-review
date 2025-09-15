@@ -63,19 +63,19 @@ dataFeature_DeepComp = {'file_structure': (0,96,interesting_col_DeepComp, 'DeepC
 
 # data register (from which directory data files will be found)
 data_register = {
-  'Elia_2016-2018'        : {'path': os.path.join('data', 'Elia_2016-2018'),    'feature': dataFeature_Elia_dah},
-  'Elia_2016-2018_1h_dah' : {'path': os.path.join('data', 'Elia_2016-2018_1h'), 'feature': dataFeature_Elia_1h_dah},
-  'Elia_2016-2018_1h_hah' : {'path': os.path.join('data', 'Elia_2016-2018_1h'), 'feature': dataFeature_Elia_1h_hah},
-  'Elia_2016'             : {'path': os.path.join('data', 'Elia_2016'),         'feature': dataFeature_Elia_dah},
-  'Elia_2019'             : {'path': os.path.join('data', 'Elia_2019'),         'feature': dataFeature_Elia_dah},
-  'Elia_2019_1h_dah'      : {'path': os.path.join('data', 'Elia_2019_1h'),      'feature': dataFeature_Elia_1h_dah},
-  'Elia_2019_1h_hah'      : {'path': os.path.join('data', 'Elia_2019_1h'),      'feature': dataFeature_Elia_1h_hah},
-  'RUGBYR1_old'    : {'path': os.path.join('data', 'NEMweb', 'RUGBYR1',  '202309_202408'), 'feature': dataFeature_NEM, 'power_base': 65.45, 'atol': 6},
-  'RUGBYR1_new'    : {'path': os.path.join('data', 'NEMweb', 'RUGBYR1',  '202408_202505'), 'feature': dataFeature_NEM, 'power_base': 65.45, 'atol': 6},
-  'BANN1_old'      : {'path': os.path.join('data', 'NEMweb', 'BANN1',    '202309_202408'), 'feature': dataFeature_NEM, 'power_base': 88.84, 'atol': 6},
-  'BANN1_new'      : {'path': os.path.join('data', 'NEMweb', 'BANN1',    '202408_202505'), 'feature': dataFeature_NEM, 'power_base': 88.84, 'atol': 6},
-  'EDENVSF1_old'   : {'path': os.path.join('data', 'NEMweb', 'EDENVSF1', '202309_202408'), 'feature': dataFeature_NEM, 'power_base': 147.85, 'atol': 6},
-  'EDENVSF1_new'   : {'path': os.path.join('data', 'NEMweb', 'EDENVSF1', '202408_202505'), 'feature': dataFeature_NEM, 'power_base': 147.85, 'atol': 6},
+  'Elia_2016-2018'        : {'path': os.path.join('..', 'data', 'Elia_2016-2018'),    'feature': dataFeature_Elia_dah},
+  'Elia_2016-2018_1h_dah' : {'path': os.path.join('..', 'data', 'Elia_2016-2018_1h'), 'feature': dataFeature_Elia_1h_dah},
+  'Elia_2016-2018_1h_hah' : {'path': os.path.join('..', 'data', 'Elia_2016-2018_1h'), 'feature': dataFeature_Elia_1h_hah},
+  'Elia_2016'             : {'path': os.path.join('..', 'data', 'Elia_2016'),         'feature': dataFeature_Elia_dah},
+  'Elia_2019'             : {'path': os.path.join('..', 'data', 'Elia_2019'),         'feature': dataFeature_Elia_dah},
+  'Elia_2019_1h_dah'      : {'path': os.path.join('..', 'data', 'Elia_2019_1h'),      'feature': dataFeature_Elia_1h_dah},
+  'Elia_2019_1h_hah'      : {'path': os.path.join('..', 'data', 'Elia_2019_1h'),      'feature': dataFeature_Elia_1h_hah},
+  'RUGBYR1_old'    : {'path': os.path.join('..', 'data', 'NEMweb', 'RUGBYR1',  '202309_202408'), 'feature': dataFeature_NEM, 'power_base': 65.45, 'atol': 6},
+  'RUGBYR1_new'    : {'path': os.path.join('..', 'data', 'NEMweb', 'RUGBYR1',  '202408_202505'), 'feature': dataFeature_NEM, 'power_base': 65.45, 'atol': 6},
+  'BANN1_old'      : {'path': os.path.join('..', 'data', 'NEMweb', 'BANN1',    '202309_202408'), 'feature': dataFeature_NEM, 'power_base': 88.84, 'atol': 6},
+  'BANN1_new'      : {'path': os.path.join('..', 'data', 'NEMweb', 'BANN1',    '202408_202505'), 'feature': dataFeature_NEM, 'power_base': 88.84, 'atol': 6},
+  'EDENVSF1_old'   : {'path': os.path.join('..', 'data', 'NEMweb', 'EDENVSF1', '202309_202408'), 'feature': dataFeature_NEM, 'power_base': 147.85, 'atol': 6},
+  'EDENVSF1_new'   : {'path': os.path.join('..', 'data', 'NEMweb', 'EDENVSF1', '202408_202505'), 'feature': dataFeature_NEM, 'power_base': 147.85, 'atol': 6},
 }
 
 # specify the datasets used for training and evaluation
