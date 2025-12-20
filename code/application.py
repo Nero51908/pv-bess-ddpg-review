@@ -98,10 +98,6 @@ def train_ddpg(dataset: str, bcap=None, agent_properties=None, sweep_config=None
   save_info = ddpg_agent.save_agent()
   print('\n----------------------------------- Training Finished ------------------------------------------- ')
   
-#  config.save_info_buffer.append(save_info)
-#  # Print saved info
-#  for text in config.save_info_buffer:
-#    print(text)
   
 def train_ddpg_tracked_by_wandb(dataset, bcap):
   # wandb setup
@@ -155,7 +151,7 @@ def analyze_evaluation(filepath: str, spotlight: bool, atol_pu: float):
     "perfect_rate": perfect_rate,
     "rmse": rmse,
     "mae": mae,
-    "mape": mape, # warning: adding this column will corrupt existing evaluation_journal.csv as it did not journalize mape.
+    "mape": mape, 
     "spotlight": spotlight,
   }
   return metric_dict
@@ -166,7 +162,6 @@ def journalize_evaluation(csv_path: str, fixed_c, run_id: str, dataset: str, bes
     atol_pu = 1e-08
   else:
     atol_pu = config.data_register[dataset]['atol'] / config.data_register[dataset]['power_base']
-# atol_pu = config.data_register[dataset]['atol'] / config.data_register[dataset]['power_base']
   print(f"journalize_evaluation(): {dataset=}, {atol_pu=}")
   info_dict   = {
     "dataset": dataset,
@@ -195,7 +190,6 @@ def eval_ddpg(run_id: str, dataset: str, bess_properties: dict):
   data_feature = config.data_register[dataset]['feature']
   ddpg_agent   = definitions.DDPG.load_model(run_id)
 
-  # declare data buffer that reads testing data from data_testing folder.
   data_buffer = definitions.Data_Buffer()
   data_buffer.read_data_from(data_path, *data_feature['file_structure'])
   evaluation_set = data_buffer.prepare_data_np()
