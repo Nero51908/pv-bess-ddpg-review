@@ -1,9 +1,0 @@
-gymnasium
-kaleido
-matplotlib
-numpy==2.0.2
-pandas==2.2.3
-plotly
-plotly-express
-torch==2.5.1
-wandb==0.19.7
